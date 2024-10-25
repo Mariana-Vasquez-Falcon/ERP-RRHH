@@ -1,0 +1,111 @@
+/* Estilo para el cuerpo */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+    padding-top: 60px; /* Asegura espacio para el navbar horizontal */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Asegura que el body ocupe toda la altura de la ventana */
+}
+
+/* Navbar horizontal */
+.navbar-horizontal {
+    height: 60px; /* Asegura que la altura sea suficiente para el logo y el texto */
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #007bff;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Espacio entre el logo y el texto */
+    padding: 0 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-size: 14px;
+}
+
+/* Navbar vertical */
+.navbar-vertical {
+    width: 200px;
+    height: calc(100vh - 60px); /* Resta la altura de la barra horizontal */
+    position: fixed;
+    top: 60px; /* Empieza justo debajo del navbar horizontal */
+    left: 0;
+    background-color: #343a40;
+    z-index: 900;
+    padding-top: 10px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Ajuste para el contenido principal */
+.container-fluid {
+    margin-left: 200px; /* Desplaza el contenido para evitar el navbar vertical */
+    padding: 20px;
+    flex-grow: 1; /* Permite que el contenedor crezca */
+    margin-top: 0;
+}
+
+/* Ajuste para el pie de página */
+footer {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative; /* Cambia a relative para evitar que se superponga con el contenido */
+    bottom: 0;
+    width: calc(100% - 200px); /* Ajusta el ancho para no superponerse al navbar vertical */
+    margin-left: 200px; /* Desplaza el pie de página para evitar el navbar vertical */
+    margin-top: auto;
+}
+
+/* Estilo para la línea del footer */
+hr {
+    border-top: 1px solid #ffffff;
+    margin: 10px 0;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    /* Ajustes para el navbar vertical en pantallas pequeñas */
+    .navbar-vertical {
+        width: 100%;
+        position: fixed;
+        top: 60px;
+        z-index: 900;
+        display: none;
+    }
+
+    .navbar-vertical.show {
+        display: block;
+    }
+
+    /* Ajustes para el contenido principal */
+    .container-fluid {
+        margin-left: 0;
+    }
+
+    /* Ajustes para el pie de página */
+    footer {
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+/* Ajustes para el navbar horizontal en pantallas pequeñas */
+@media (max-width: 768px) {
+    .navbar-horizontal {
+        padding: 0 5px;
+        font-size: 12px;
+    }
+
+    .navbar-horizontal .navbar-brand img {
+        width: 30px;
+    }
+
+    .navbar-horizontal .navbar-brand span {
+        font-size: 14px;
+    }
+}
