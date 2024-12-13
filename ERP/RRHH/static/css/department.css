@@ -1,0 +1,70 @@
+/* Estilo para el cuerpo */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+    padding-top: 60px; /* Asegura espacio para el navbar horizontal */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Asegura que el body ocupe toda la altura de la ventana */
+}
+
+/* Navbar horizontal */
+.navbar {
+    height: 60px; /* Asegura que la altura sea suficiente para el logo y el texto */
+    background-color: #007bff;
+}
+
+/* Estilo para los enlaces del navbar */
+.custom-nav-link {
+    color: #ffffff; /* Color inicial del texto */
+    transition: background-color 0.3s, color 0.3s; /* Transición suave */
+    padding: 8px 12px; /* Espaciado para un área de clic más amplia */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+.custom-nav-link:hover {
+    background-color: #ffffff; /* Cambia el fondo al pasar el mouse */
+    color: #007bff; /* Cambia el color del texto */
+    text-decoration: none; /* Elimina el subrayado del enlace */
+}
+
+/* Estilo para el botón de "Volver a Inicio" */
+.custom-btn {
+    transition: background-color 0.3s, color 0.3s; /* Transición suave */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+.custom-btn:hover {
+    background-color: #007bff; /* Fondo azul al pasar el mouse */
+    color: #ffffff; /* Texto blanco */
+    text-decoration: none; /* Elimina el subrayado del enlace */
+}
+
+/* Ajuste para el pie de página */
+footer {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: auto; /* Permite que el pie de página se mueva hacia abajo */
+    clear: both; /* Limpia los elementos flotantes que puedan estar interfiriendo */
+}
+
+/* Estilo para la línea del footer */
+hr {
+    border-top: 1px solid #ffffff;
+    margin: 10px 0;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .container-fluid {
+        padding: 10px;
+    }
+
+    footer {
+        width: 100%;
+    }
+}

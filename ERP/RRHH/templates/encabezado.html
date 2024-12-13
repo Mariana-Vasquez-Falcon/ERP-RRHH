@@ -1,0 +1,26 @@
+{% load static %}
+<!-- encabezado.html -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+    <div class="container-fluid">
+        <!-- Logo y título alineados a la izquierda -->
+        <a class="navbar-brand d-flex align-items-center" href="{% url 'ini' %}">
+            <img src="{% static 'logo.jpg' %}" alt="Logo" style="width:40px;" class="rounded-pill me-2">
+            <span class="text-white">Recursos Humanos</span>
+        </a>
+
+        <span class="text-white mx-2">|</span>
+        <div class="navbar-nav d-flex flex-row">
+            <a class="nav-link custom-nav-link" href="{% url 'department_list' %}">Departamentos</a>
+            <a class="nav-link custom-nav-link" href="{% url 'list_employees' %}">Empleados</a>
+            <a class="nav-link custom-nav-link" href="{% url 'job_position_list' %}">Posición de Trabajo</a>
+            <a class="nav-link custom-nav-link" href="{% url 'list_payment_dates' %}">Día de Pago</a>
+            <a class="nav-link custom-nav-link" href="{% url 'list_salary_histories' %}">Historial de Salario</a>
+            <a class="nav-link custom-nav-link" href="{% url 'list_vacations' %}">Vacaciones</a>
+        </div>
+
+        <div class="ms-auto d-flex align-items-center">
+            <a href="{% url 'ini' %}" class="btn btn-light custom-btn">Volver a Inicio</a>
+        </div>
+    </div>
+</nav>
+

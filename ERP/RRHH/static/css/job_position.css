@@ -1,0 +1,83 @@
+/* Estilo para el cuerpo */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa; /* Fondo claro */
+    margin: 0; /* Sin margen */
+    padding: 0; /* Sin padding */
+    padding-top: 60px; /* Espacio para el navbar */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ocupa toda la altura de la ventana */
+}
+
+/* Navbar horizontal */
+.navbar {
+    height: 60px; /* Altura del navbar */
+    background-color: #007bff; /* Color de fondo del navbar */
+    display: flex; /* Flexbox para centrar contenido */
+    align-items: center; /* Centrar verticalmente */
+    padding: 0 20px; /* Espaciado horizontal */
+}
+
+/* Estilo para los enlaces del navbar */
+.custom-nav-link {
+    color: #ffffff; /* Color del texto */
+    transition: background-color 0.3s, color 0.3s; /* Transiciones suaves */
+    padding: 8px 12px; /* Espaciado para el área de clic */
+    border-radius: 5px; /* Bordes redondeados */
+    margin-right: 15px; /* Espaciado entre enlaces */
+}
+
+.custom-nav-link:hover {
+    background-color: #ffffff; /* Fondo blanco al pasar el mouse */
+    color: #007bff; /* Texto azul al pasar el mouse */
+    text-decoration: none; /* Sin subrayado */
+}
+
+/* Estilo para el botón de "Volver a Inicio" */
+.custom-btn {
+    transition: background-color 0.3s, color 0.3s; /* Transiciones suaves */
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 10px 15px; /* Espaciado para el botón */
+    border: none; /* Sin borde */
+    cursor: pointer; /* Cambiar cursor al pasar el mouse */
+}
+
+.custom-btn:hover {
+    background-color: #007bff; /* Fondo azul al pasar el mouse */
+    color: #ffffff; /* Texto blanco al pasar el mouse */
+    text-decoration: none; /* Sin subrayado */
+}
+
+/* Ajuste para el pie de página */
+footer {
+    background-color: #343a40; /* Fondo oscuro */
+    color: white; /* Texto blanco */
+    text-align: center; /* Centrar texto */
+    padding: 20px 0; /* Espaciado vertical */
+    margin-top: auto; /* Mueve el pie de página hacia abajo */
+    clear: both; /* Limpia elementos flotantes */
+}
+
+/* Estilo para la línea del footer */
+hr {
+    border-top: 1px solid #ffffff; /* Línea blanca */
+    margin: 10px 0; /* Margen vertical */
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column; /* Cambia la dirección a columna en pantallas pequeñas */
+        height: auto; /* Altura automática */
+    }
+
+    .custom-nav-link {
+        margin-right: 0; /* Sin margen derecho en móviles */
+        margin-bottom: 10px; /* Espaciado entre enlaces en móviles */
+    }
+
+    footer {
+        width: 100%; /* Ancho completo en móviles */
+    }
+}

@@ -1,0 +1,67 @@
+/* Estilo para el cuerpo */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+    padding-top: 60px; /* Asegura espacio para el navbar horizontal */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Asegura que el body ocupe toda la altura de la ventana */
+}
+
+/* Navbar horizontal */
+.navbar {
+    height: 60px; /* Asegura que la altura sea suficiente para el logo y el texto */
+    background-color: #007bff;
+}
+
+/* Ajuste para el contenido principal */
+.container-fluid {
+    padding: 20px;
+    flex-grow: 1; /* Permite que el contenedor crezca */
+    margin-left: 0; /* Elimina el margen izquierdo que podría estar causando el espacio */
+    margin-top: 0; /* Asegura que no haya margen superior adicional */
+}
+
+/* Ajuste para el pie de página */
+footer {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: auto; /* Permite que el pie de página se mueva hacia abajo */
+    clear: both; /* Limpia los elementos flotantes que puedan estar interfiriendo */
+}
+
+/* Estilo para la línea del footer */
+hr {
+    border-top: 1px solid #ffffff;
+    margin: 10px 0;
+}
+
+/* Estilo para los iconos y botones dentro de la sección principal */
+.btn-icon {
+    text-decoration: none; /* Sin subrayado */
+    color: inherit; /* Hereda el color del padre */
+}
+
+.icon-container {
+    display: flex;
+    justify-content: center; /* Centra los iconos horizontalmente */
+    align-items: center; /* Centra los iconos verticalmente */
+    margin-bottom: 10px; /* Espaciado entre el icono y el título */
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    /* Ajustes para el contenido principal */
+    .container-fluid {
+        padding: 10px;
+    }
+
+    /* Ajustes para el pie de página */
+    footer {
+        width: 100%;
+    }
+}
